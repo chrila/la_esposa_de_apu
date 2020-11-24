@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @baby.name %>
+</p>
+
+<p>
+  <strong># feedings today:</strong>
+  <%= @baby.feeding_count_today %>
+</p>
+
+<p>
+  <strong>Last time fed:</strong>
+  <%= @baby.last_time %>
+</p>
+
+<p>
+  <strong>Total feeding time today [seconds]:</strong>
+  <%= @baby.total_time_today %>
+</p>
+
+<p>
+  <strong>Total feeding amount today [ml]:</strong>
+  <%= @baby.total_amount_today %>
+</p>
+
+<%= link_to 'Edit', edit_baby_path(@baby) %> |
+<%= link_to 'Back', babies_path %>
